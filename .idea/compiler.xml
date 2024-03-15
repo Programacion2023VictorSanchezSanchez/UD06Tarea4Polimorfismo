@@ -9,8 +9,5 @@
         <module name="UD06Tarea4Polimorfismo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="UD06Tarea4Polimorfismo" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
