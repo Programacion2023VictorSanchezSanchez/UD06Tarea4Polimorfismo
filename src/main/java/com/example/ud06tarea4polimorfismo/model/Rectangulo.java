@@ -2,24 +2,23 @@ package com.example.ud06tarea4polimorfismo.model;
 
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 
-public class Cuadrado extends Figura {
+public class Rectangulo extends Figura {
     protected Rectangle rectangle;
 
     //Constructor
-    public Cuadrado(int x, int y, Color color, int size) {
+    public Rectangulo(int x, int y, Color color, int size) {
         super(x, y, color, size);
-        rectangle = new Rectangle(size, size);
+        rectangle = new Rectangle(size * 2, size);
         rectangle.setX(x);
         rectangle.setY(y);
         rectangle.setFill(color);
     }
 
     /**
-     * Dibujamos cuadrado
-     * @param pnPanel panel donde lo dibujamos
+     * Dibujamos rectangulo
+     * @param pnPanel panel donde lo dibujaremos
      */
     @Override
     public void dibujar(Pane pnPanel) {
@@ -27,8 +26,8 @@ public class Cuadrado extends Figura {
     }
 
     /**
-     * Borramos cuadrado
-     * @param pnPanel panel donde lo borramos
+     * Borramos rectangulo
+     * @param pnPanel panel donde lo borraremos
      */
     @Override
     public void borrar(Pane pnPanel) {
@@ -36,7 +35,7 @@ public class Cuadrado extends Figura {
     }
 
     /**
-     * Cambiamos posicion del cuadrado
+     * Cambiamos posicion de rectangulo
      * @param x eje x
      * @param y eje y
      */
@@ -50,7 +49,7 @@ public class Cuadrado extends Figura {
 
 
     /**
-     * Cambiamos color del cuadrado
+     * Cambiamos color de rectangulo
      * @param color que obtendrá
      */
     @Override
@@ -61,18 +60,18 @@ public class Cuadrado extends Figura {
 
 
     /**
-     * Cambiamos tamaño del cuadrado
+     * Cambiamos tamaño de rectangulo
      * @param size tamaño que obtendrá
      */
     @Override
     public void cambiarSize(int size) {
-        rectangle.setWidth(size);
+        rectangle.setWidth(size * 2);
         rectangle.setHeight(size);
     }
 
 
     /**
-     * Movemos cuadrado
+     * Movemos rectangulo
      * @param pnPanel panel donde lo moveremos
      */
     @Override

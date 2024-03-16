@@ -12,8 +12,8 @@ public class UD06Tarea4Polimorfismo extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(UD06Tarea4Polimorfismo.class.getResource("inicio-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
-        stage.setTitle("IESOchoa");
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Figuras");
         stage.setScene(scene);
         stage.show();
     }
